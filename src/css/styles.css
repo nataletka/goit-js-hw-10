@@ -85,3 +85,69 @@ button[data-start]:disabled {
 #datetime-picker:disabled {
   background: #cfcfcf;
 }
+
+.form {
+  margin-top: 36px;
+  margin-left: 156px;
+  width: 360px;
+}
+input[name='delay'] {
+  display: flex;
+  width: 360px;
+  margin-bottom: 16px;
+}
+.label {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  padding-right: 48px;
+  padding-left: 48px;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  max-width: 360px;
+  margin-bottom: 24px;
+}
+legend {
+  text-align: left;
+}
+
+input[type='radio'] {
+  accent-color: #007bff;
+}
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+button:hover {
+  background: #6c8cff;
+}
+fieldset:hover {
+  border-color: black;
+}
+input[name='delay']:hover {
+  border-color: black;
+}
+input[name='delay']:valid {
+  border-color: #4e75ff;
+}
