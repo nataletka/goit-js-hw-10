@@ -9,6 +9,7 @@ const startBtn = document.querySelector('button[data-start]');
 const inputDate = document.getElementById('datetime-picker');
 let userSelectedDate;
 let timerInterval;
+startBtn.disabled = true;
 
 flatpickr(inputDate, {
   enableTime: true,
@@ -41,6 +42,8 @@ startBtn.addEventListener('click', () => {
     if (timeRemaining <= 0) {
       clearInterval(timerInterval);
       updateTimer(0, 0, 0, 0);
+      inputDate.disabled = false;
+      startBtn.disabled = true;
       return;
     }
     const { days, hours, minutes, seconds } = convertMs(timeRemaining);
